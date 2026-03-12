@@ -1,26 +1,26 @@
-#define _CRT_SECURE_NO_WARNINGS		//elimina las advertencias propias de Microsoft por utilizar funciones estandar que pueden causar (buffer overflows).
+#define _CRT_SECURE_NO_WARNINGS		    //elimina las advertencias propias de Microsoft por utilizar funciones estandar que pueden causar (buffer overflows).
 
-#include <stdio.h>                  //librería estandar para que el programa se comunique con el usuario.
-#include <stdlib.h>                 //libreria estandar que contiene funciones para control de memoria, procesos del sistema y conversiones de datos.
-#include <time.h>                   //Devuelve el tiempo actual del sistema en segundos transcurridos desde el 1 de enero de 1970 (el Tiempo Unix).
-#include <stdbool.h>                //librería estandar para usar booleanos.
-#include <windows.h>                //librería que te permite interactuar con el hardware, las ventanas y el sistema de archivos profundo.
+#include <stdio.h>                      //librería estandar para que el programa se comunique con el usuario.
+#include <stdlib.h>                     //libreria estandar que contiene funciones para control de memoria, procesos del sistema y conversiones de datos.
+#include <time.h>                       //Devuelve el tiempo actual del sistema en segundos transcurridos desde el 1 de enero de 1970 (el Tiempo Unix).
+#include <stdbool.h>                    //librería estandar para usar booleanos.
+#include <windows.h>                
 
 // --- SECCIÓN DE PORTABILIDAD ---
 #ifdef _WIN32
-    #include <windows.h>
+    #include <windows.h>                //librería que te permite interactuar con el hardware, las ventanas y el sistema de archivos profundo.
     #define PAUSA(ms) Sleep(ms)
 #else
-    #include <unistd.h>
-    #define PAUSA(ms) usleep(ms * 1000) // usleep usa microsegundos.
+    #include <unistd.h>                 //Esta librería es el equivalente a <windows.h>, pero para sistemas basados en estándares POSIX (como macOS, Linux, y FreeBSD).
+    #define PAUSA(ms) usleep(ms * 1000) //usleep usa microsegundos.
 #endif
 // -------------------------------
 
 // --- MACRO PARA LIMPIAR PANTALLA ---
 #ifdef _WIN32
-    #define LIMPIAR_PANTALLA() system("cls")
+    #define LIMPIAR_PANTALLA() system("cls")    //Limpia la información en pantalla en sistemas Windows.
 #else
-    #define LIMPIAR_PANTALLA() system("clear")
+    #define LIMPIAR_PANTALLA() system("clear")  //Limpia la información en pantalla en sistemas macOS, Linux y FreeBSD.
 #endif
 // -----------------------------------
 

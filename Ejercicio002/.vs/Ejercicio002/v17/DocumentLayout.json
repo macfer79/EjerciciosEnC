@@ -1,12 +1,37 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\manue\\Documents\\DevelopersProyects\\EjerciciosEnC\\Ejercicio002\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{86DA460D-C401-49AF-AB90-6DF7684B34CF}|Ejercicio002.vcxproj|C:\\Users\\manue\\Documents\\DevelopersProyects\\EjerciciosEnC\\Ejercicio002\\Ejercicio002.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{86DA460D-C401-49AF-AB90-6DF7684B34CF}|Ejercicio002.vcxproj|solutionrelative:Ejercicio002.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Ejercicio002.cpp",
+              "DocumentMoniker": "C:\\Users\\manue\\Documents\\DevelopersProyects\\EjerciciosEnC\\Ejercicio002\\Ejercicio002.cpp",
+              "RelativeDocumentMoniker": "Ejercicio002.cpp",
+              "ToolTip": "C:\\Users\\manue\\Documents\\DevelopersProyects\\EjerciciosEnC\\Ejercicio002\\Ejercicio002.cpp",
+              "RelativeToolTip": "Ejercicio002.cpp",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACUAAABoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-03-13T03:51:08.406Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

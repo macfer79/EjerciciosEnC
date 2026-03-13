@@ -35,8 +35,8 @@ int main()
 
     while (num < 20)                //Saldrá del bucle cuando no se cumpla la condición.
     {
-        printf("%d\n", aleatorio);  //imprimimos el valor aleatorio.
-        PAUSA(100);                 //Pausa de medio segundo (500ms) dependiendo del S.O. utilizado.
+        printf("Generando numeros aleatorios... %d\n", aleatorio);  //imprimimos los números aleatorios.
+        PAUSA(500);                 //Pausa de medio segundo (500ms) dependiendo del S.O. utilizado.
 
         num++;                      //Suma 1 al contador para saber la cantidad de números aleatorios generados.
         LIMPIAR_PANTALLA();         //Limpia la pantalla dependiendo del S.O. utilizado.

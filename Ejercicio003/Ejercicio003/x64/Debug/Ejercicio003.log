@@ -1,0 +1,3 @@
+﻿  Ejercicio003.cpp
+C:\Users\manue\Documents\DevelopersProyects\EjerciciosEnC\Ejercicio003\Ejercicio003\Ejercicio003.cpp(33,15): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+  Ejercicio003.vcxproj -> C:\Users\manue\Documents\DevelopersProyects\EjerciciosEnC\Ejercicio003\x64\Debug\Ejercicio003.exe

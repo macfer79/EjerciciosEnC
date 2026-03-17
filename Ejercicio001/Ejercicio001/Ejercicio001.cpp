@@ -1,6 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS		//elimina las advertencias propias de Microsoft por utilizar funciones estandar que pueden causar (buffer overflows).
 
-//Librerías
+// Si estamos en Windows, incluimos la librería necesaria.
 #ifdef _WIN32
 #include <windows.h>
 #endif
@@ -14,18 +14,18 @@ int main()
 	// 1. Configuración para macOS / Linux
 	setlocale(LC_ALL, "en_US.UTF-8");
 
-    // Solo para Windows: Forzar la consola a usar UTF-8 (65001)
+    // 2. Configuración específica para la consola de Windows
     #ifdef _WIN32
-	SetConsoleOutputCP(CP_UTF8);
-	SetConsoleCP(CP_UTF8);
+	SetConsoleOutputCP(CP_UTF8); // Fuerza a Windows a dejar de usar la tabla de Códigos 437 y que utilice Unicode UTF-8.
+	SetConsoleCP(CP_UTF8); // Fallback si el anterior falla.
     #endif
 
 	//Declaración de variables
-	int n = 0;						//contador de cantidad de productos en la lista.
-	int producto;					//número de producto.
+	int n = 0;						//Contador de cantidad de productos en la lista.
+	int producto;					//Número de producto.
 
-	float precio;					//número que indica el precio del producto.
-	float total = 0.0;				//suma del total de los precios de los productos de la lista.
+	float precio;					//Número que indica el precio del producto.
+	float total = 0.0;				//Suma del total de los precios de los productos de la lista.
 
 	do {
 		//Introducción del código de producto por el usuario.
@@ -57,17 +57,16 @@ int main()
 		printf("La cantidad de productos de la lista es: %d\n", n);
 	}
 
-	//system("pause"); Eliminado porque en otros S.O. no funcionará correctamente (macOS y Linux).
 	printf("El programa ha terminado.\n");
 
 	printf("Presiona Enter para salir...");
 
-	// Limpia el búfer: lee caracteres hasta encontrar un \n o el fin del archivo
+	// Limpia el búfer: lee caracteres hasta encontrar un \n o el fin del archivo.
     int c;
     while ((c = getchar()) != '\n' && c != EOF);
 
     // Ahora sí, este se detendrá de verdad
-	getchar();						//Espera a que el usuario presione una tecla (Enter)
+	getchar();
 
 	return 0;
 }

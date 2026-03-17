@@ -11,11 +11,13 @@
 
 int main()
 {
-	setlocale(LC_ALL, "");
+	// 1. Configuración para macOS / Linux
+	setlocale(LC_ALL, "en_US.UTF-8");
 
     // Solo para Windows: Forzar la consola a usar UTF-8 (65001)
     #ifdef _WIN32
-    SetConsoleOutputCP(CP_UTF8);
+	SetConsoleOutputCP(CP_UTF8);
+	SetConsoleCP(CP_UTF8);
     #endif
 
 	//Declaración de variables

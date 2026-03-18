@@ -1,3 +1,10 @@
+/* Ejercicio 001
+   Crea un programa en el que se le pida al usuario introducir un código de producto y su precio. El programa tendrá que calcular el precio total de todos los productos y la 
+   cantidad de productos que se introducen en la lista. El programa terminará si el valor del código de producto introducido es igual a 0. Tanto si no se ha introducido ningún 
+   producto como si se ha introducido alguno, tiene que imprimir por pantalla informando al usuario de la situación del programa y finalizarlo.
+*/
+
+
 #define _CRT_SECURE_NO_WARNINGS		// Elimina las advertencias propias de Microsoft por utilizar funciones estandar que pueden causar (buffer overflows).
 
 // Declaración de librerias.
